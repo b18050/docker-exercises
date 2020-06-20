@@ -39,3 +39,27 @@ Sat, 20 Jun 2020 09:31:18 GMT
 Secret message is:
 "Docker is easy"
 
+1.5
+chandan@chandan-Lenovo-ideapad-300-15ISK:~$ docker run -it ubuntu:16.04 sh -c 'apt-get update; apt-get install curl -y; echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+Get:1 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:3 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]      
+Get:4 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]    
+Get:5 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [1129 kB]
+Get:6 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]
+....
+Updating certificates in /etc/ssl/certs...
+127 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
