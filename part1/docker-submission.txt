@@ -63,3 +63,14 @@ Searching..
 <h1>Moved Permanently</h1>
 <p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
 </body></html>
+
+1.6
+command
+docker build -t docker-clock .
+docker run doxker-clock
+
+Dockerfile
+FROM devopsdockeruh/overwrite_cmd_exercise
+
+CMD ["-c"]
+
