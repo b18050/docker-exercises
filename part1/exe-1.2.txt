@@ -1,0 +1,6 @@
+1.2
+docker container
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+docker image
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
